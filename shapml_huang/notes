@@ -1,0 +1,23 @@
+This package does not support tensorflow based ML models because of version control issues
+
+
+Safest approach to use this package would be to create a new conda environment: 
+
+conda create -n shapml python=3.7
+conda activate shapml
+pip install git+https://github.roche.com/harunr/shapml.git#egg=shapml
+jupyter lab build
+jupyter labextension install @jupyter-widgets/jupyterlab-manager @bokeh/jupyter_bokeh @jupyterlab/toc jupyterlab_conda @pyviz/jupyterlab_pyviz
+#pip install -U jupyter_console
+#pip install prompt-toolkit --no-cache-dir
+python -m ipykernel install --user --name shapml --display-name "Python (shapml)"
+
+
+# If you need to install a specific version: 
+pip install git+https://github.roche.com/harunr/shapml.git@v0.1.0#egg=shapml
+
+
+
+
+
+
